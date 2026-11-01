@@ -1,0 +1,116 @@
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --font-display: "Sora", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Figtree", ui-sans-serif, system-ui, sans-serif;
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-leaf: var(--leaf);
+  --color-forest: var(--forest);
+  --color-forest-foreground: var(--forest-foreground);
+  --color-positive: var(--positive);
+  --color-neutral-answer: var(--neutral-answer);
+  --color-negative: var(--negative);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+}
+
+:root {
+  --radius: 0.875rem;
+  --background: oklch(0.985 0.006 140);
+  --foreground: oklch(0.24 0.03 155);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.24 0.03 155);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.24 0.03 155);
+  --primary: oklch(0.42 0.1 155);
+  --primary-foreground: oklch(0.99 0.005 140);
+  --secondary: oklch(0.95 0.025 145);
+  --secondary-foreground: oklch(0.32 0.08 155);
+  --muted: oklch(0.955 0.008 150);
+  --muted-foreground: oklch(0.47 0.02 155);
+  --accent: oklch(0.92 0.05 140);
+  --accent-foreground: oklch(0.3 0.08 155);
+  --destructive: oklch(0.577 0.2 27);
+  --destructive-foreground: oklch(0.99 0 0);
+  --border: oklch(0.91 0.015 150);
+  --input: oklch(0.91 0.015 150);
+  --ring: oklch(0.55 0.12 150);
+  --leaf: oklch(0.66 0.15 142);
+  --forest: oklch(0.3 0.07 158);
+  --forest-foreground: oklch(0.97 0.01 140);
+  --positive: oklch(0.52 0.13 152);
+  --neutral-answer: oklch(0.78 0.13 85);
+  --negative: oklch(0.6 0.03 160);
+  --chart-1: oklch(0.52 0.13 152);
+  --chart-2: oklch(0.7 0.14 140);
+  --chart-3: oklch(0.36 0.08 160);
+  --shadow-card: 0 1px 2px oklch(0.3 0.05 155 / 6%), 0 8px 24px -12px oklch(0.3 0.05 155 / 18%);
+}
+
+@layer base {
+  * { border-color: var(--color-border); }
+  html { scroll-behavior: smooth; }
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+    overflow-x: hidden;
+  }
+  h1, h2, h3, h4 { font-family: var(--font-display); letter-spacing: -0.02em; }
+}
+
+@utility card-soft {
+  background: var(--color-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-card);
+}
+
+@utility eyebrow {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-primary);
+}
+
+@utility fade-up {
+  animation: fade-up 0.6s ease-out both;
+}
+
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { animation: none !important; scroll-behavior: auto !important; }
+}
