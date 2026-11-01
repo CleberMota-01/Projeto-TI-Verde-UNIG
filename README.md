@@ -1,6 +1,6 @@
 # TI Verde: Tecnologia que Cuida do Futuro
 
-Site acadêmico sobre TI Verde, os alunos participantes são: Cleber Mota, Nicole louise, Yago Cruz e Gabriel Arsênio, para acessar nosso site, clique no link fixado: https://ti-verde-project.lovable.app/
+Site acadêmico sobre TI Verde, os alunos participantes são: Cleber Mota, Nicole louise, Yago Cruz e Gabriel Arsênio, para acessar nosso site, clique no link fixado: https://clebermota-01.github.io/Projeto-TI-Verde-UNIG/
 
 
 ## Sobre os dados
