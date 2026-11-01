@@ -7,12 +7,15 @@
 import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 
 export default defineConfig({
-  // Pre-bundle the chart library so it never triggers a mid-session dependency
-  // re-optimization (which loads two React copies and crashes hooks).
-  vite: { optimizeDeps: { include: ["recharts"] } },
+  vite: {
+    base: "/Projeto-TI-Verde-UNIG/",
+    optimizeDeps: { include: ["recharts"] },
+  },
   tanstackStart: {
-    // Redirect TanStack Start's bundled server entry to src/server.ts (our SSR error wrapper).
-    // nitro/vite builds from this
     server: { entry: "server" },
+    spa: {
+      enabled: true,
+      prerender: { outputPath: "/index.html" },
+    },
   },
 });
