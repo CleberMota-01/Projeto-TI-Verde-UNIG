@@ -1,6 +1,6 @@
 # TI Verde: Tecnologia que Cuida do Futuro
 
-Site acadêmico sobre TI Verde. Este Projeto foi elaborado pela Faculdade UNIG (Universidade Iguaçu), com o intuito de inspirar jovens aspirantes à área de TI.
+Site acadêmico sobre TI Verde. Este Projeto foi elaborado pela Faculdade UNIG (Universidade Iguaçu), com o intuito de inspirar jovens aspirantes à área de TI..
 
 ## Sobre os dados
 
