@@ -68,7 +68,7 @@ Importante: os **resultados da pesquisa continuam estáticos** em `src/lib/data.
 ## Autenticação
 
 Cadastro e login por e-mail e senha. No cadastro, o usuário confirma o acesso pelo link enviado por e-mail antes de entrar. A página `/compromissos` exige sessão ativa e redireciona para `/auth` quando não autenticada.
-
+  
 ## Estrutura
 
 ```text
