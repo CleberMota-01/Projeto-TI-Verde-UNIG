@@ -1,6 +1,6 @@
 # TI Verde: Tecnologia que Cuida do Futuro
 
-Site acadêmico sobre TI Verde (tecnologia e sustentabilidade): descarte correto de eletrônicos, reutilização, doação, economia de energia e consumo responsável. Projeto universitário com pesquisa de opinião, dashboard de resultados, comparação entre empresas e uma campanha de conscientização.
+Site acadêmico sobre TI Verde, os alunos participantes são: Cleber Mota, Nicole louise, Yago Cruz e Gabriel Arsênio, para acessar nosso site, clique no link fixado: https://ti-verde-project.lovable.app/
 
 Todo o conteúdo está em português do Brasil.
 
@@ -30,8 +30,6 @@ Outros comandos:
 npm run build      # geração da versão de produção
 npm run test       # testes automatizados
 ```
-
-O arquivo `.env` já traz a URL e a chave pública do backend. São chaves públicas por natureza (uso no navegador); a chave privada do banco não está no repositório e não é necessária para rodar o site.
 
 ## Páginas
 
