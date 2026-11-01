@@ -2,6 +2,12 @@
 
 Site acadêmico sobre TI Verde, os alunos participantes são: Cleber Mota, Nicole louise, Yago Cruz e Gabriel Arsênio, para acessar nosso site, clique no link fixado: https://ti-verde-project.lovable.app/
 
+
+## Sobre os dados
+
+A pesquisa foi aplicada a 17 participantes, com 7 perguntas. Os números, percentuais e interpretações vêm do material do trabalho e não devem ser alterados ou substituídos por valores fictícios.
+
+
 Todo o conteúdo está em português do Brasil.
 
 ## Stack
@@ -77,7 +83,3 @@ src/
 drizzle/         script de criação das tabelas
 supabase/        configuração do backend
 ```
-
-## Sobre os dados
-
-A pesquisa foi aplicada a 17 participantes, com 7 perguntas. Os números, percentuais e interpretações vêm do material do trabalho e não devem ser alterados ou substituídos por valores fictícios.
