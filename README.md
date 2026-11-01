@@ -74,7 +74,7 @@ Cadastro e login por e-mail e senha. No cadastro, o usuário confirma o acesso p
 
 ```text
 src/
-  assets/        imagem de capa
+  assets/        imagem de capa.
   components/    cabeçalho, rodapé e blocos do site
   integrations/  clientes do backend (gerados automaticamente)
   lib/           dados da pesquisa e operações de compromissos
